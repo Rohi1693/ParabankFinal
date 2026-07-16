@@ -1,0 +1,19 @@
+{
+  "validAccount": {
+    "customerId": 12434,
+    "accountType": 0,
+    "fromAccountId": 13455
+  },
+
+  "invalidCustomer": {
+    "customerId": 999999,
+    "accountType": 0,
+    "fromAccountId": 13455
+  },
+
+  "blankRequest": {
+    "customerId": "",
+    "accountType": "",
+    "fromAccountId": ""
+  }
+}
