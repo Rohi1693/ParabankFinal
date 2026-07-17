@@ -6,7 +6,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
         features = "src/test/resources/ui",
         glue = {"stepDefinition", "hooks"},
-        tags = "@ui2",
+        tags = "@ui",
         plugin = {
                 "pretty",
                 "html:target/cucumber-report.html",

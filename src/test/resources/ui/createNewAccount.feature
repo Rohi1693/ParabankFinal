@@ -1,4 +1,4 @@
-@ui2
+@ui
 Feature: Open New Account
 
   Background:
