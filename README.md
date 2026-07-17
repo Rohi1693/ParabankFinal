@@ -55,7 +55,7 @@ mvn test -Dcucumber.filter.tags="@API"
 After execution, the Extent report is generated under:
 
 ```
-target/test-output.html
+target/test-output
 ```
 
 Open the HTML file in a browser to view the execution summary, passed/failed scenarios, and step details.
