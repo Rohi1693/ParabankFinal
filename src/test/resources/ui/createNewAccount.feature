@@ -1,18 +1,19 @@
+@ui2
 Feature: Open New Account
 
   Background:
-    Given the customer is logged into ParaBank
+    Given the customer is authenticated into Parabank application
 
-  Scenario Outline: Open a new account
-    When the customer opens a new "<accountType>" account using existing account "<accountNumber>"
-    Then the account should be opened successfully
-    And the new account should appear in the account overview
 
-    Examples:
-      | accountType | accountNumber |
-      | SAVINGS     | 12345         |
 
-  Scenario: View account details
-    Given the customer has an active newly created account
-    When the customer accesses the account overview
-    Then the newly created account should be visible with its account number
+
+  Scenario: Customer opens a new checking account successfully
+    When the customer requests a new checking account using an existing account
+    Then the new account should be created successfully
+    And the customer should be provided with the new account number
+
+  Scenario: Customer opens a new savings account successfully
+    When the customer requests a new savings account using an existing account
+    Then the new account should be created successfully
+    And the customer should be provided with the new account number
+    And Verify the account number in Account overview section

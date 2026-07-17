@@ -1,3 +1,4 @@
+@api
 Feature: Login Security Validation
 
   Background:
